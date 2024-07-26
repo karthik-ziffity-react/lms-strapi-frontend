@@ -1,0 +1,26 @@
+# Build artifacts
+.next/
+out/
+
+# Dependency directories
+node_modules/
+
+# IDE-specific files
+.idea/
+.vscode/
+
+# Log files
+logs/*.log
+npm-debug.log*
+
+# Runtime data
+pids/*.pid
+*.seed
+
+# Coverage reports
+coverage/
+
+# Other
+.DS_Store
+
+.env
