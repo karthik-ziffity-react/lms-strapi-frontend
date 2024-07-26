@@ -1,6 +1,6 @@
-import { getAuthToken } from "./get-token";
-import { getStrapiURL } from "@/lib/utils";
 import qs from "qs";
+import { getStrapiURL } from "@/lib/utils";
+import { getAuthToken } from "./get-token";
 
 const query = qs.stringify({
   populate: { image: { fields: ["url", "alternativeText"] } },

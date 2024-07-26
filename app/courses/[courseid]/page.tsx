@@ -25,14 +25,17 @@ export default async function CourseCardRoute({
 
           <div className='sections'>
             {course.sections.map((sec: any) => (
-              <div className='section flex flex-col gap-2 mb-4'>
+              <div key={sec.id} className='section flex flex-col gap-2 mb-4'>
                 <h3 className='section__title text-xl font-medium text-center md:text-left mb-2'>
                   {sec.title}
                 </h3>
 
                 <ul className='videos list-none p-0 m-0'>
                   {sec.videos.map((vid: any) => (
-                    <li className='video hover:bg-gray-200 rounded-md px-4 py-2 cursor-pointer'>
+                    <li
+                      key={vid.id}
+                      className='video hover:bg-gray-200 rounded-md px-4 py-2 cursor-pointer'
+                    >
                       {user.ok ? (
                         <a
                           href={`${vid.url.url}`}
